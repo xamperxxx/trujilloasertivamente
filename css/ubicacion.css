@@ -1,0 +1,424 @@
+/* ============================================================
+   ASERTIVA MENTE — Página Ubicación
+   ============================================================ */
+
+/* ============================================================
+   HERO UBICACIÓN — Split: info izq + mapa der
+   ============================================================ */
+
+.location-hero {
+  padding: 7rem 2rem 5rem;
+  background: linear-gradient(160deg, #F5F0E8 0%, #EDE8DF 50%, #F5F0E8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.location-hero::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(74, 111, 165, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.location-hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+/* Info izquierda */
+.location-info .eyebrow {
+  background: #FFFFFF;
+  border: 1px solid #E0D5C5;
+  color: #8A7A6A;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.location-info h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--blue-dark);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.location-lead {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 460px;
+}
+
+/* Detalles de contacto con iconos */
+.location-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.location-details li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.location-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #E8E2D8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-primary);
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.location-detail-text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.location-detail-text strong {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.location-detail-text span,
+.location-detail-text span a {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 0.2s;
+}
+
+.location-detail-text span a:hover {
+  color: var(--blue-primary);
+}
+
+/* Botón WhatsApp verde */
+.btn-wa-blue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  background: #25D366;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+  transition: all 0.35s var(--ease-out);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.25);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-wa-blue:hover {
+  background: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(18, 140, 126, 0.35);
+}
+
+/* Mapa derecha */
+.location-map {
+  position: relative;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.map-overlay-btn {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  background: var(--blue-primary);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: var(--radius-full);
+  transition: all 0.3s var(--ease-out);
+  box-shadow: 0 4px 16px rgba(74, 111, 165, 0.3);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.map-overlay-btn:hover {
+  background: var(--blue-dark);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 111, 165, 0.4);
+}
+
+/* ============================================================
+   HORARIOS
+   ============================================================ */
+
+.hours-section {
+  padding: 5rem 2rem;
+  background: #FFFFFF;
+}
+
+.hours-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hours-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hours-header .tag {
+  background: #F5F0E8;
+  border: 1px solid #E0D5C5;
+  color: #8A7A6A;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hours-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--blue-dark);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.hours-card {
+  background: #FAFAF8;
+  border: 1px solid #EDE8DF;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.35s var(--ease-out);
+}
+
+.hours-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  border-color: var(--blue-pale);
+}
+
+.hours-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  border: 1px solid #E8E2D8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--blue-primary);
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.hours-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--blue-dark);
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.hours-time {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--blue-primary);
+  margin-bottom: 0.3rem;
+}
+
+.hours-note {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.cta-section {
+  padding: 5rem 2rem;
+  background: var(--blue-dark);
+  text-align: center;
+}
+
+.cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.btn-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  background: #FFFFFF;
+  color: var(--blue-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+  transition: all 0.35s var(--ease-out);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.btn-light:hover {
+  background: #F5F0E8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.15);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  .location-hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .location-info {
+    text-align: center;
+  }
+
+  .location-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .location-details {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .location-details li {
+    text-align: left;
+  }
+
+  .map-wrapper {
+    height: 400px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .location-hero {
+    padding: 6rem 1.5rem 3.5rem;
+  }
+
+  .location-info h1 {
+    font-size: clamp(1.9rem, 7vw, 2.6rem);
+  }
+
+  .map-wrapper {
+    height: 320px;
+    border-radius: 16px;
+  }
+
+  .map-overlay-btn {
+    padding: 0.6rem 1.1rem;
+    font-size: 0.8rem;
+  }
+
+  .hours-section {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .hours-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .cta-section {
+    padding: 3.5rem 1.5rem;
+  }
+}

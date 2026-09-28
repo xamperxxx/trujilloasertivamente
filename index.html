@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asertiva Mente | Centro Psicológico en Trujillo</title>
+  <meta name="description" content="Centro psicológico en Trujillo. Terapia individual, de pareja, familiar, infantil y adolescente. Atención presencial y virtual. +5 años de experiencia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  /* Chat widget - estilos de respaldo independientes de styles.css */
+  #chat-widget { position: fixed; bottom: 20px; right: 20px; z-index: 9999; }
+  #chat-toggle { transition: transform 0.2s ease; }
+  #chat-toggle:hover { transform: scale(1.1); }
+  #chat-box {
+    display: none;
+    flex-direction: column;
+    width: 320px;
+    height: 420px;
+    max-width: calc(100vw - 40px);
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  @media (max-width: 480px) {
+    #chat-box { width: calc(100vw - 40px); height: 60vh; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Asertiva Mente, inicio">
+        <div class="brand-logo">
+          <img src="img/logocentro.png" alt="Logo Asertiva Mente">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            <span class="brand-green">Asertiva</span><span class="brand-blue">Mente</span>
+          </span>
+          <span class="brand-sub">Centro Psicológico</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="ayuda.html" class="nav-cta">
+          <span>¿Necesitas ayuda?</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO CON VIDEO -->
+    <section class="hero-video" id="inicio">
+      <div class="hero-video-bg">
+        <video autoplay muted loop playsinline poster="img/hero-poster.jpg">
+          <source src="img/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+      <div class="hero-video-content">
+        <h1 class="reveal">
+          Sentirte mejor puede<br>
+          empezar <em>hoy</em>
+        </h1>
+        <p class="reveal" style="--d:0.15s">
+          Un espacio seguro en Trujillo donde acompañamos tu proceso con profesionalismo, empatía y absoluta confidencialidad.
+        </p>
+        <div class="hero-video-actions reveal" style="--d:0.3s">
+          <a href="https://wa.me/51966941229?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20psicolog%C3%ADa%20y%20conocer%20la%20disponibilidad%20de%20citas.%20Agradezco%20su%20atenci%C3%B3n." class="btn-light hero-whatsapp" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span>¿Necesitas ayuda?</span>
+          </a>
+          <a href="#nosotros" class="btn-ghost-light">
+            Conocer más
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-section">
+      <div class="stats-inner">
+        <div class="stat-item reveal" style="--d:0s">
+          <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+          <div class="stat-data">
+            <strong class="counter" data-target="5">0</strong><span>+</span>
+            <span class="stat-label">años de experiencia</span>
+          </div>
+        </div>
+        <div class="stat-item reveal" style="--d:0.08s">
+          <div class="stat-icon"><i class="fas fa-user-shield"></i></div>
+          <div class="stat-data">
+            <strong>100%</strong>
+            <span class="stat-label">confidencialidad</span>
+          </div>
+        </div>
+        <div class="stat-item reveal" style="--d:0.16s">
+          <div class="stat-icon"><i class="fas fa-laptop-medical"></i></div>
+          <div class="stat-data">
+            <strong>Dual</strong>
+            <span class="stat-label">presencial y virtual</span>
+          </div>
+        </div>
+        <div class="stat-item reveal" style="--d:0.24s">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-data">
+            <strong>5+</strong>
+            <span class="stat-label">especialidades</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="nosotros">
+      <div class="about-inner">
+        <div class="about-visual reveal-left">
+          <div class="about-image-wrapper">
+            <img src="img/about-center.jpg" alt="Espacio de bienestar Asertiva Mente">
+            <div class="about-badge">
+              <i class="fas fa-award"></i>
+              <span>Compromiso<br>ético</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal-right" style="--d:0.15s">
+          <span class="tag">Sobre nosotros</span>
+          <h2><span style="color: var(--green-accent);">¿Quiénes</span> <span style="color: var(--blue-primary);">somos?</span></h2>
+          <p class="about-lead">
+            Somos <strong>Asertiva Mente</strong>, un espacio creado para quienes se atreven a explorar su mundo interior con valentía y curiosidad.
+          </p>
+          <p>
+            No creemos en soluciones rápidas ni en etiquetas vacías: acompañamos procesos reales, profundos y humanos. La psicología no es solo técnica, es también arte, escucha, conexión y presencia.
+          </p>
+          <p>
+            Trabajamos para que cada persona que nos encuentre descubra en sí misma la fuerza para transformar su vida, con atención en Trujillo y sesiones virtuales para todo el Perú.
+          </p>
+          <div class="about-social">
+            <a href="https://www.instagram.com/asertivamente_trujillo/" target="_blank" rel="noopener" class="social-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61576677617343" target="_blank" rel="noopener" class="social-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@asertiva.mente" target="_blank" rel="noopener" class="social-tiktok" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/51966941229?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20psicolog%C3%ADa%20y%20conocer%20la%20disponibilidad%20de%20citas.%20Agradezco%20su%20atenci%C3%B3n." target="_blank" rel="noopener" class="social-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services-section" id="servicios">
+      <div class="section-header reveal">
+        <span class="tag">Nuestros servicios</span>
+        <h2>Atención psicológica<br>para cada etapa de la vida</h2>
+        <p>Enfoques terapéuticos adaptados a tus necesidades, con calidez humana y profesionalismo.</p>
+      </div>
+      <div class="services-grid">
+        <a href="servicios.html#terapia-adultos" class="service-card service-featured reveal" style="--d:0s">
+          <div class="service-card-bg">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="service-card-content">
+            <h3>Terapia con Adultos</h3>
+            <p>Un espacio personalizado para adultos, adolescentes y niños. Exploramos juntos tus emociones, pensamientos y conductas para encontrar el camino hacia el bienestar.</p>
+            <span class="service-link">Conocer más <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <div class="service-image-card">
+          <img src="img/terapiacentro.png" alt="Sesión de terapia psicológica">
+        </div>
+        <article class="service-card service-pair reveal" style="--d:0.1s">
+          <div class="service-icon"><i class="fas fa-heart"></i></div>
+          <div class="service-card-content">
+            <h3>Terapia de Pareja</h3>
+            <p>Reconstruir la conexión, mejorar la comunicación y recuperar la confianza mutua.</p>
+          </div>
+        </article>
+        <article class="service-card reveal" style="--d:0.18s">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <h3>Terapia Familiar</h3>
+          <p>Fortalecer vínculos, resolver conflictos y construir relaciones más sanas.</p>
+        </article>
+        <article class="service-card reveal" style="--d:0.26s">
+          <div class="service-icon"><i class="fas fa-child"></i></div>
+          <h3>Infantil y Adolescente</h3>
+          <p>Acompañamiento especializado con técnicas adaptadas a los más jóvenes.</p>
+        </article>
+        <article class="service-card reveal" style="--d:0.34s">
+          <div class="service-icon"><i class="fas fa-spa"></i></div>
+          <h3>Bienestar Complementario</h3>
+          <p>Relajación, talleres psicoeducativos y actividades enfocadas en el bienestar emocional.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process-section">
+      <div class="section-header reveal">
+        <span class="tag">Tu camino</span>
+        <h2>¿Cómo funciona?</h2>
+        <p>Dar el primer paso es más sencillo de lo que imaginas. Te acompañamos en cada etapa.</p>
+      </div>
+      <div class="process-inner">
+        <div class="process-step reveal" style="--d:0s">
+          <div class="step-circle">01</div>
+          <h3>Contáctanos</h3>
+          <p>Escríbenos por WhatsApp o correo. Te responderemos con calidez y sin compromiso.</p>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" style="--d:0.12s">
+          <div class="step-circle">02</div>
+          <h3>Primera sesión</h3>
+          <p>Conocemos tu situación en un espacio seguro, confidencial y sin juicios.</p>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" style="--d:0.24s">
+          <div class="step-circle">03</div>
+          <h3>Plan personalizado</h3>
+          <p>Diseñamos juntos un plan terapéutico adaptado a tus necesidades y objetivos.</p>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step reveal" style="--d:0.36s">
+          <div class="step-circle">04</div>
+          <h3>Transformación</h3>
+          <p>Acompañamos tu proceso con herramientas profesionales y empatía genuina.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-section">
+      <div class="section-header reveal">
+        <span class="tag">Nuestras fortalezas</span>
+        <h2>¿Por qué escogernos?</h2>
+      </div>
+      <div class="why-grid">
+        <article class="why-card reveal" style="--d:0s">
+          <div class="why-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="why-body">
+            <h3>Atención integral con calidez humana</h3>
+            <p>Combinamos profesionalismo con cercanía emocional. Cada paciente es atendido con empatía, respeto y sin juicios.</p>
+          </div>
+        </article>
+        <article class="why-card reveal" style="--d:0.07s">
+          <div class="why-icon">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <div class="why-body">
+            <h3>Especialistas en distintas áreas</h3>
+            <p>Psicólogos formados en clínica, educativa, infantil, pareja, adultos y neuropsicología.</p>
+          </div>
+        </article>
+        <article class="why-card reveal" style="--d:0.14s">
+          <div class="why-icon">
+            <i class="fas fa-spa"></i>
+          </div>
+          <div class="why-body">
+            <h3>Servicios complementarios de bienestar</h3>
+            <p>Talleres psicoeducativos, orientación psicológica y actividades enfocadas en el bienestar emocional.</p>
+          </div>
+        </article>
+        <article class="why-card reveal" style="--d:0.21s">
+          <div class="why-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="why-body">
+            <h3>Compromiso con la ética y confidencialidad</h3>
+            <p>Protocolos estrictos que garantizan un entorno seguro y profesional en todo momento.</p>
+          </div>
+        </article>
+        <article class="why-card reveal" style="--d:0.28s">
+          <div class="why-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="why-body">
+            <h3>Flexibilidad y accesibilidad</h3>
+            <p>Atención presencial y virtual con horarios flexibles adaptados a tu ritmo de vida.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+      <div class="section-header reveal">
+        <span class="tag">Experiencias reales</span>
+        <h2>Lo que dicen nuestros pacientes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" style="--d:0s">
+          <div class="testimonial-photo">
+            <img src="img/testimonio1.jpeg" alt="Marina Chanvergo">
+          </div>
+          <p class="testimonial-quote">"Llegué a Asertivamente en un momento en que sentía que no podía más con la ansiedad. Desde la primera sesión me sentí escuchada, comprendida y libre de juicios. La psicóloga me ayudó con herramientas prácticas para manejar el estrés, y hoy me siento mucho más estable y segura emocionalmente. Recomiendo este lugar al 100%."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-info">
+              <strong>Marina Chanvergo</strong>
+              <span>Terapia individual</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="--d:0.1s">
+          <div class="testimonial-photo">
+            <img src="img/testimonio2.jpg" alt="Laura G.">
+          </div>
+          <p class="testimonial-quote">"Asertivamente fue un gran apoyo para mi hijo. Él tenía problemas de autoestima y no quería hablar con nadie, pero la psicóloga supo conectar con él desde el primer día. Ahora se expresa con más seguridad y aprendió a manejar sus emociones. Estoy muy agradecida con el equipo."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-info">
+              <strong>Laura G.</strong>
+              <span>Terapia infantil</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="--d:0.2s">
+          <div class="testimonial-photo">
+            <img src="img/testimonio3.jpg" alt="Diana R.">
+          </div>
+          <p class="testimonial-quote">"Mi pareja y yo acudimos a terapia de pareja en Asertivamente y fue una de las mejores decisiones. Aprendimos a comunicarnos mejor, a entender nuestras emociones y a trabajar en equipo. Las sesiones fueron claras, empáticas y siempre en un ambiente respetuoso. Hoy nuestra relación es más fuerte."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-info">
+              <strong>Diana R.</strong>
+              <span>Terapia de pareja</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-section">
+      <div class="cta-bg">
+        <video autoplay muted loop playsinline poster="img/cta-servicios-poster.jpg">
+          <source src="img/cta-servicios.mp4" type="video/mp4">
+        </video>
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="cta-inner reveal">
+        <div class="cta-content">
+          <h2>¿Listo para dar el primer paso?</h2>
+          <p>No tienes que enfrentar solo lo que sientes. Estamos aquí para acompañarte con profesionalismo, calidez y absoluta confidencialidad.</p>
+          <a href="https://wa.me/51966941229?text=Hola%2C%20quisiera%20agendar%20una%20cita%20inicial%20para%20una%20consulta%20psicol%C3%B3gica.%20%C2%BFCu%C3%A1l%20es%20la%20disponibilidad%20de%20horarios%3F%20Agradezco%20su%20tiempo." class="btn-cta-wa" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            <span>Escribir por WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="location-section" id="ubicacion">
+      <div class="location-inner">
+        <div class="location-info reveal-left">
+          <span class="tag">Encuéntranos</span>
+          <h2>Visítanos en Trujillo</h2>
+          <p class="location-lead">Estamos en una zona accesible de la ciudad, con ambiente tranquilo y privado para tu comodidad.</p>
+          <ul class="location-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Dirección</strong>
+                <span>Av. Prol. César Vallejo 1366, Trujillo 13001</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-directions"></i>
+              <div>
+                <strong>Referencia</strong>
+                <span>Frente al Real Plaza, a la altura de Oechsle, reja negra al costado de Pikara, tercer piso.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Teléfono</strong>
+                <span><a href="tel:+51966941229">966 941 229</a></span>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Correo</strong>
+                <span><a href="mailto:centropsicologicoasertivamente@gmail.com">centropsicologicoasertivamente@gmail.com</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="location-map reveal-right">
+          <iframe
+            src="https://www.google.com/maps?q=Av.+Prol.+C%C3%A9sar+Vallejo+1366,+Trujillo&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Asertiva Mente">
+          </iframe>
+          <a class="map-link" href="https://maps.app.goo.gl/vT2vbnPLq6Pjrkya9" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i> Abrir en Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="img/logocentro.png" alt="Logo Asertiva Mente">
+            <div>
+              <span class="footer-brand-name">
+                <span class="brand-green">Asertiva</span><span class="brand-blue">Mente</span>
+              </span>
+              <span class="footer-brand-sub">Centro Psicológico</span>
+            </div>
+          </div>
+          <p>Transformando vidas con empatía y profesionalismo desde Trujillo. Un espacio seguro para sanar, crecer y florecer.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/asertivamente_trujillo/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61576677617343" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@asertiva.mente" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/51966941229" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="ayuda.html">¿Necesitas ayuda?</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html#terapia-adultos">Terapia con Adultos</a></li>
+            <li><a href="servicios.html#terapia-pareja">Terapia de Pareja</a></li>
+            <li><a href="servicios.html#terapia-familiar">Terapia Familiar</a></li>
+            <li><a href="servicios.html#terapia-infantil">Infantil y Adolescente</a></li>
+            <li><a href="servicios.html#organizacional">Bienestar Complementario</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Av. Prol. César Vallejo 1366, Trujillo</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:centropsicologicoasertivamente@gmail.com">centropsicologicoasertivamente@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+51966941229">966 941 229</a></li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/51966941229" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Asertiva Mente. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+<!-- Widget de Chatbot -->
+<div id="chat-widget" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <!-- Se ha reemplazado el texto "💬 Chat con Asertiva Mente" por el icono del gatito de Flaticon -->
+  <button type="button" id="chat-toggle" style="background: #008080; color: white; border: none; padding: 10px; border-radius: 50%; cursor: pointer; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);">
+    <!-- Icono de Flaticon: <a href="https://www.flaticon.es/iconos-gratis/gato" title="gato iconos">Gato iconos creados por Magnific - Flaticon</a> -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1864/1864514.png" alt="Chat" style="width: 35px; height: 35px;">
+  </button>
+  
+  <div id="chat-box" style="display: none; width: 320px; height: 420px; background: white; border: 1px solid #ccc; border-radius: 10px; flex-direction: column; position: absolute; bottom: 70px; right: 0; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+    <div style="background: #008080; color: white; padding: 15px; border-radius: 10px 10px 0 0; font-weight: bold; display: flex; justify-content: space-between; align-items: center;">
+
+  <span style="display: flex; flex-direction: column; line-height: 1.2;">
+    <span style="font-size: 17px;">ANNA 😺</span>
+    <span style="font-size: 13px; font-weight: 500; margin-top: 3px;">ASISTENTE VIRTUAL</span>
+  </span>
+
+  <span id="close-chat" style="cursor: pointer; font-size: 20px;">&times;</span>
+
+</div>
+    <div id="chat-messages" style="flex: 1; padding: 15px; overflow-y: auto; font-size: 14px; display: flex; flex-direction: column; gap: 10px; background-color: #f9f9f9;">
+      <!-- Mensaje de bienvenida -->
+      <div style="background: #e0f2f1; padding: 10px; border-radius: 10px; align-self: flex-start; max-width: 80%;">
+        ¡Hola! soy ANNA😺 Bienvenido a Asertiva Mente. ¿En qué podemos ayudarte hoy?
+      </div>
+    </div>
+    <div style="padding: 10px; display: flex; border-top: 1px solid #eee; background: white; border-radius: 0 0 10px 10px;">
+      <input type="text" id="chat-input" placeholder="Escribe tu consulta..." style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 20px; outline: none;">
+      <button type="button" id="chat-send" style="background: #008080; color: white; border: none; padding: 0 15px; margin-left: 5px; border-radius: 20px; cursor: pointer; font-weight: bold;">Enviar</button>
+    </div>
+  </div>
+</div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

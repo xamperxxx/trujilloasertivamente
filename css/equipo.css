@@ -1,0 +1,796 @@
+/* ============================================================
+   ASERTIVA MENTE — Página Equipo
+   ============================================================ */
+
+/* ============================================================
+   HERO CON VIDEO
+   ============================================================ */
+
+.team-hero-video {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.team-hero-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 41, 59, 0.55) 0%,
+    rgba(44, 74, 110, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.team-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 7rem 2rem 4rem;
+}
+
+.eyebrow-light {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(4px);
+}
+
+.team-hero-content h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 600;
+  line-height: 1.08;
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.team-hero-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   ROSANA FLORES — Destacada
+   ============================================================ */
+
+.team-featured {
+  padding: 4rem 2rem;
+  background: linear-gradient(160deg, #EDE8DF 0%, #E5DDD2 50%, #EDE8DF 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-featured::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(74, 111, 165, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.featured-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 3rem;
+  align-items: start;
+  background: #FFFFFF;
+  border-radius: 28px;
+  padding: 2.5rem;
+  border: 1px solid #E0D5C5;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Foto vertical */
+.featured-photo {
+  position: relative;
+}
+
+.featured-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  display: block;
+}
+
+/* Info */
+.featured-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #C9A96E 0%, #B8945F 100%);
+  color: #FFFFFF;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: fit-content;
+  margin-bottom: 0.3rem;
+  box-shadow: 0 3px 10px rgba(201, 169, 110, 0.3);
+}
+
+.featured-badge i {
+  font-size: 0.7rem;
+}
+
+.featured-info h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--blue-dark);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0.2rem;
+}
+
+.featured-role {
+  font-size: 1rem;
+  color: var(--blue-primary);
+  font-weight: 500;
+  margin-bottom: 0.1rem;
+}
+
+.featured-credential {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.featured-bio {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+.featured-specialties {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featured-specialties li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.featured-specialties li i {
+  color: var(--green-accent);
+  font-size: 0.75rem;
+}
+
+/* ============================================================
+   GRID DEL EQUIPO — Fotos verticales, colores alternados
+   ============================================================ */
+
+.team-grid-section {
+  padding: 4rem 2rem 5rem;
+  background: #F8F6F3;
+}
+
+.team-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+/* Tarjeta individual */
+.team-card {
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s var(--ease-out);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+}
+
+/* Fondos alternados con color */
+.team-card:nth-child(odd) {
+  background: linear-gradient(180deg, #F5F0E8 0%, #EDE8DF 100%);
+  border-color: #E0D5C5;
+}
+
+.team-card:nth-child(even) {
+  background: linear-gradient(180deg, #E8EFF7 0%, #DCE6F2 100%);
+  border-color: #C5D4E8;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Foto vertical */
+.team-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.team-card:hover .team-photo img {
+  transform: scale(1.04);
+}
+
+/* Placeholder foto */
+.team-photo-placeholder {
+  background: linear-gradient(135deg, #D4CFC5 0%, #C4BEB2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--blue-primary);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: var(--font-display);
+  box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
+}
+
+/* Body */
+.team-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--blue-dark);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.team-role {
+  font-size: 0.82rem;
+  color: var(--blue-primary);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.team-desc {
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.placeholder-text {
+  font-style: italic;
+  opacity: 0.65;
+}
+
+/* Tags con color */
+.team-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.team-tags li {
+  padding: 0.35rem 0.8rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Tags en tarjetas impares (fondo beige) */
+.team-card:nth-child(odd) .team-tags li {
+  background: var(--blue-primary);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(74, 111, 165, 0.25);
+}
+
+/* Tags en tarjetas pares (fondo azul) */
+.team-card:nth-child(even) .team-tags li {
+  background: var(--green-accent);
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(90, 143, 110, 0.25);
+}
+
+/* Tag placeholder */
+.team-tags li.tag-placeholder {
+  background: rgba(0, 0, 0, 0.15) !important;
+  color: var(--text-secondary) !important;
+  box-shadow: none !important;
+}
+
+/* ============================================================
+   GALERÍA DEL EQUIPO
+   ============================================================ */
+
+.team-gallery-section {
+  padding: 5rem 2rem 6rem;
+  background: linear-gradient(160deg, #EDE8DF 0%, #E5DDD2 50%, #EDE8DF 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-gallery-section::before {
+  content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(74, 111, 165, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: blobFloat 8s ease-in-out infinite;
+}
+
+.team-gallery-section::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(90, 143, 110, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: blobFloat 10s ease-in-out infinite reverse;
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -20px) scale(1.05); }
+  66% { transform: translate(-15px, 15px) scale(0.95); }
+}
+
+.team-gallery-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header de la galería */
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.gallery-eyebrow {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(135deg, var(--blue-primary) 0%, var(--blue-dark) 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(74, 111, 165, 0.25);
+  animation: eyebrowPulse 3s ease-in-out infinite;
+}
+
+@keyframes eyebrowPulse {
+  0%, 100% { box-shadow: 0 4px 15px rgba(74, 111, 165, 0.25); }
+  50% { box-shadow: 0 4px 25px rgba(74, 111, 165, 0.45); }
+}
+
+.gallery-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--blue-dark);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.9rem;
+  letter-spacing: -0.01em;
+}
+
+.gallery-intro {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Grid de fotos — 12 fotos = 4 filas de 3 */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Animación de entrada escalonada con efecto 3D */
+.gallery-item {
+  opacity: 0;
+  transform: perspective(800px) rotateX(15deg) translateY(50px) scale(0.9);
+  animation: galleryReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: var(--d, 0s);
+}
+
+@keyframes galleryReveal {
+  0% {
+    opacity: 0;
+    transform: perspective(800px) rotateX(15deg) translateY(50px) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(-3deg) translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0deg) translateY(0) scale(1);
+  }
+}
+
+/* Animación flotante suave — cada foto flota con delay diferente */
+.gallery-item:nth-child(3n+1) { animation: galleryReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, floatSlow 5s ease-in-out infinite 1s; }
+.gallery-item:nth-child(3n+2) { animation: galleryReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, floatSlow 6s ease-in-out infinite 2s; }
+.gallery-item:nth-child(3n+3) { animation: galleryReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, floatSlow 4.5s ease-in-out infinite 0.5s; }
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Wrapper de imagen */
+.gallery-img-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s var(--ease-out);
+  cursor: pointer;
+}
+
+.gallery-img-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: border-color 0.4s var(--ease-out);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gallery-img-wrap:hover::before {
+  border-color: rgba(74, 111, 165, 0.5);
+}
+
+.gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s var(--ease-out);
+}
+
+.gallery-img-wrap:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay con botón Me Encanta */
+.gallery-overlay {
+  display: none;
+}
+
+.gallery-img-wrap::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.9s var(--ease-out);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.gallery-img-wrap:hover::after {
+  transform: translateX(100%);
+}
+
+/* Contador de likes */
+/* ============================================================
+   CTA
+   ============================================================ */
+
+
+.cta-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(rgba(30, 41, 59, 0.6), rgba(44, 74, 110, 0.65)), url('../img/equipoayuda.jpg') center/cover no-repeat;
+  text-align: center;
+}
+
+.cta-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: #FFFFFF;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.btn-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  background: #25D366;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+  transition: all 0.35s var(--ease-out);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+}
+
+.btn-light:hover {
+  background: #1fa857;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.4);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1024px) {
+  .featured-card {
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gallery-grid {
+    gap: 1rem;
+  }
+
+  .gallery-img-wrap {
+    border-radius: 16px;
+  }
+
+  .gallery-img-wrap::before {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-hero-content {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .team-hero-content h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .team-featured {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .featured-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .featured-photo {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .featured-photo img {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .featured-badge {
+    margin: 0 auto 0.3rem;
+  }
+
+  .featured-info {
+    align-items: center;
+  }
+
+  .featured-bio {
+    text-align: left;
+  }
+
+  .featured-specialties {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .team-grid-section {
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .team-photo {
+    aspect-ratio: 3 / 4;
+  }
+
+  .team-gallery-section {
+    padding: 2.5rem 1rem 3.5rem;
+  }
+
+  .gallery-header {
+    margin-bottom: 2rem;
+  }
+
+  .gallery-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .gallery-intro {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .gallery-item {
+    opacity: 0;
+    transform: translateY(22px) scale(0.96);
+    animation: galleryEntranceMobile 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: var(--d, 0s);
+  }
+
+  .gallery-item:nth-child(3n+1) {
+    animation-delay: 0.08s;
+  }
+
+  .gallery-item:nth-child(3n+2) {
+    animation-delay: 0.16s;
+  }
+
+  .gallery-item:nth-child(3n+3) {
+    animation-delay: 0.24s;
+  }
+
+  @keyframes galleryEntranceMobile {
+    0% {
+      opacity: 0;
+      transform: translateY(24px) scale(0.96);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-4px) scale(1.01);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .gallery-img-wrap {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .gallery-img-wrap::before {
+    border-radius: 12px;
+  }
+
+  .gallery-overlay,
+  .gallery-like-btn,
+  .gallery-like-count,
+  .gallery-like-btn::before,
+  .gallery-like-btn::after {
+    display: none !important;
+  }
+
+  .cta-section {
+    padding: 3.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Asertiva Mente — Centro Psicológico en Trujillo</title>
+  <meta name="description" content="Terapia de pareja, familiar, individual, infantil, adolescente y adultos. Evaluaciones psicológicas, salud ocupacional y psicoeducación en Trujillo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/servicios.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Asertiva Mente, inicio">
+        <div class="brand-logo">
+          <img src="img/logocentro.png" alt="Logo Asertiva Mente">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">
+            <span class="brand-green">Asertiva</span><span class="brand-blue">Mente</span>
+          </span>
+          <span class="brand-sub">Centro Psicológico</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html" class="active">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="ayuda.html" class="nav-cta">
+          <span>¿Necesitas ayuda?</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO — Carrusel de fondo completo + Texto flotante -->
+    <section class="services-hero">
+      <div class="hero-carousel-bg" id="heroCarousel">
+        <div class="carousel-track-bg">
+          <div class="carousel-slide-bg active">
+            <img src="img/servicos1.jpeg" alt="Espacio de terapia 1" loading="eager">
+          </div>
+          <div class="carousel-slide-bg">
+            <img src="img/servicos2.jpeg" alt="Espacio de terapia 2" loading="lazy">
+          </div>
+          <div class="carousel-slide-bg">
+            <img src="img/servicos3.jpeg" alt="Espacio de terapia 3" loading="lazy">
+          </div>
+          <div class="carousel-slide-bg">
+            <img src="img/servicos4.jpeg" alt="Espacio de terapia 4" loading="lazy">
+          </div>
+          <div class="carousel-slide-bg">
+            <img src="img/servicos5.jpeg" alt="Espacio de terapia 5" loading="lazy">
+          </div>
+          <div class="carousel-slide-bg">
+            <img src="img/servicos6.jpeg" alt="Espacio de terapia 6" loading="lazy">
+          </div>
+          <div class="carousel-slide-bg">
+            <img src="img/servicos7.jpeg" alt="Espacio de terapia 7" loading="lazy">
+          </div>
+        </div>
+        <div class="hero-carousel-overlay"></div>
+
+        <button class="carousel-arrow carousel-prev" aria-label="Imagen anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-arrow carousel-next" aria-label="Imagen siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-dots">
+          <button class="dot active" data-index="0" aria-label="Ir a imagen 1"></button>
+          <button class="dot" data-index="1" aria-label="Ir a imagen 2"></button>
+          <button class="dot" data-index="2" aria-label="Ir a imagen 3"></button>
+          <button class="dot" data-index="3" aria-label="Ir a imagen 4"></button>
+          <button class="dot" data-index="4" aria-label="Ir a imagen 5"></button>
+          <button class="dot" data-index="5" aria-label="Ir a imagen 6"></button>
+          <button class="dot" data-index="6" aria-label="Ir a imagen 7"></button>
+        </div>
+      </div>
+
+      <div class="services-hero-content reveal">
+        <h1>Espacios especializados <em>para ti</em></h1>
+        <p>Ambientes pensados para tu bienestar.</p>
+        <a href="#terapias" class="btn-primary">
+          Ver servicios
+          <i class="fas fa-arrow-down" style="font-size:0.8rem"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- TERAPIAS CON VIDEO — Formato split alternado, sin cuadros -->
+    <section class="terapias-section" id="terapias">
+
+      <!-- 1. TERAPIA DE PAREJA — Video izq, texto der -->
+      <div class="terapia-row terapia-row-video-left reveal" id="terapia-pareja">
+        <div class="terapia-media">
+          <video autoplay muted loop playsinline poster="img/terapia-pareja-poster.jpg">
+            <source src="img/terapia-pareja.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="terapia-content">
+          <span class="terapia-num">01</span>
+          <h2>Terapia de Pareja</h2>
+          <p>Fortalecer la relación, mejorar la comunicación y reconstruir la confianza mutua en un espacio seguro y neutral.</p>
+          <ul class="terapia-list">
+            <li><i class="fas fa-check"></i> Comunicación y Conexión</li>
+            <li><i class="fas fa-check"></i> Manejo de Conflictos</li>
+            <li><i class="fas fa-check"></i> Confianza y Compromiso</li>
+            <li><i class="fas fa-check"></i> Intimidad y Vínculo</li>
+            <li><i class="fas fa-check"></i> Proyectos en Común</li>
+            <li><i class="fas fa-check"></i> Separaciones</li>
+          </ul>
+          <a href="https://wa.me/51966941229?text=Hola%2C%20me%20interesa%20la%20Terapia%20de%20Pareja.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20horarios%2C%20costos%20y%20disponibilidad.%20%C2%A1Gracias%21" class="btn-wa-green" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span>Consultar</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. TERAPIA FAMILIAR — Texto izq, video der -->
+      <div class="terapia-row terapia-row-video-right reveal" id="terapia-familiar">
+        <div class="terapia-content">
+          <span class="terapia-num">02</span>
+          <h2>Terapia Familiar</h2>
+          <p>Trabajo conjunto para sanar vínculos, resolver conflictos y fortalecer la dinámica familiar desde la raíz.</p>
+          <ul class="terapia-list">
+            <li><i class="fas fa-check"></i> Comunicación</li>
+            <li><i class="fas fa-check"></i> Resolución de conflictos</li>
+            <li><i class="fas fa-check"></i> Relación padres e hijos</li>
+            <li><i class="fas fa-check"></i> Métodos de crianza</li>
+            <li><i class="fas fa-check"></i> Separaciones y cambios familiares</li>
+          </ul>
+          <a href="https://wa.me/51966941229?text=Hola%2C%20me%20interesa%20la%20Terapia%20Familiar.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proceso%2C%20horarios%20y%20tarifas.%20%C2%A1Gracias%21" class="btn-wa-green" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span>Consultar</span>
+          </a>
+        </div>
+        <div class="terapia-media">
+          <video autoplay muted loop playsinline poster="img/terapia-familiar-poster.jpg">
+            <source src="img/terapia-familiar.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- 3. TERAPIA CON ADULTOS — Video izq, texto der -->
+      <div class="terapia-row terapia-row-video-left reveal" id="terapia-adultos">
+        <div class="terapia-media">
+          <video autoplay muted loop playsinline poster="img/terapia-adulto-poster.jpg">
+            <source src="img/terapia-adulto.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="terapia-content">
+          <span class="terapia-num">03</span>
+          <h2>Terapia con Adultos</h2>
+          <p>Espacio seguro para explorar emociones, superar dificultades y crecer personalmente con herramientas prácticas.</p>
+          <ul class="terapia-list">
+            <li><i class="fas fa-check"></i> Conducta</li>
+            <li><i class="fas fa-check"></i> Gestión emocional</li>
+            <li><i class="fas fa-check"></i> Habilidades sociales</li>
+            <li><i class="fas fa-check"></i> Ansiedad, estrés y depresión</li>
+            <li><i class="fas fa-check"></i> Duelo</li>
+          </ul>
+          <a href="https://wa.me/51966941229?text=Hola%2C%20me%20interesa%20la%20Terapia%20para%20Adultos.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20enfoque%2C%20horarios%20y%20costos.%20%C2%A1Gracias%21" class="btn-wa-green" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span>Consultar</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. TERAPIA CON ADOLESCENTES — Texto izq, video der -->
+      <div class="terapia-row terapia-row-video-right reveal" id="terapia-adolescentes">
+        <div class="terapia-content">
+          <span class="terapia-num">04</span>
+          <h2>Terapia con Adolescentes</h2>
+          <p>Acompañamiento en una etapa clave de cambios, identidad y descubrimiento personal.</p>
+          <ul class="terapia-list">
+            <li><i class="fas fa-check"></i> Orientación vocacional</li>
+            <li><i class="fas fa-check"></i> Conducta</li>
+            <li><i class="fas fa-check"></i> Gestión emocional</li>
+            <li><i class="fas fa-check"></i> Aprendizaje</li>
+            <li><i class="fas fa-check"></i> Habilidades sociales</li>
+            <li><i class="fas fa-check"></i> Ansiedad, estrés y depresión</li>
+          </ul>
+          <a href="https://wa.me/51966941229?text=Hola%2C%20me%20interesa%20la%20Terapia%20para%20Adolescentes.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20acompa%C3%B1amiento%2C%20horarios%20y%20tarifas.%20%C2%A1Gracias%21" class="btn-wa-green" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span>Consultar</span>
+          </a>
+        </div>
+        <div class="terapia-media">
+          <video autoplay muted loop playsinline poster="img/terapia-adolescente-poster.jpg">
+            <source src="img/terapia-adolescente.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- 5. TERAPIA INFANTIL — Video izq, texto der -->
+      <div class="terapia-row terapia-row-video-left reveal" id="terapia-infantil">
+        <div class="terapia-media">
+          <video autoplay muted loop playsinline poster="img/terapia-infantil-poster.jpg">
+            <source src="img/terapia-infantil.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="terapia-content">
+          <span class="terapia-num">05</span>
+          <h2>Terapia Infantil</h2>
+          <p>Intervención especializada para niños con trastornos divergentes,utilizando técnicas lúdicas adaptadas a su desarrollo emocional.</p>
+          <ul class="terapia-list">
+            <li><i class="fas fa-check"></i> Evaluación diagnóstico: Autismo, TDAH, DOUW y otros.</li>
+            <li><i class="fas fa-check"></i> Terapia de Lenguaje</li>
+            <li><i class="fas fa-check"></i> Problemas de Aprendizaje</li>
+            <li><i class="fas fa-check"></i> Problemas de conducta</li>
+            <li><i class="fas fa-check"></i> Gestión emocional</li>
+          </ul>
+          <a href="https://wa.me/51966941229?text=Hola%2C%20me%20interesa%20la%20Terapia%20Infantil.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20evaluaci%C3%B3n%2C%20horarios%20y%20costos.%20%C2%A1Gracias%21" class="btn-wa-green" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i>
+            <span>Consultar</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ORGANIZACIONAL — Imágenes, formato grid 2 cols -->
+    <section class="services-org" id="organizacional">
+      <div class="section-header reveal">
+        <span class="tag">Organizacional y educativo</span>
+        <h2>Más allá de la terapia</h2>
+        <p>Servicios especializados para empresas, instituciones y comunidades.</p>
+      </div>
+      <div class="org-grid">
+
+        <article class="org-card reveal" style="--d:0s">
+          <div class="org-img">
+            <img src="img/servicio-seleccion.jpg" alt="Selección y Capacitación">
+          </div>
+          <div class="org-body">
+            <h3>Selección y Capacitación</h3>
+            <p>Apoyo integral en gestión del talento humano con enfoque psicológico.</p>
+            <ul class="org-list">
+              <li><i class="fas fa-check"></i> Selección por competencias</li>
+              <li><i class="fas fa-check"></i> Evaluación de perfiles</li>
+              <li><i class="fas fa-check"></i> Pruebas psicológicas</li>
+              <li><i class="fas fa-check"></i> Clima organizacional</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="org-card reveal" style="--d:0.1s">
+          <div class="org-img">
+            <img src="img/servicio-evaluacion.jpg" alt="Evaluación e Informe">
+          </div>
+          <div class="org-body">
+            <h3>Evaluación e Informe</h3>
+            <p>Evaluaciones rigurosas con devolución clara y orientada a la acción.</p>
+            <ul class="org-list">
+              <li><i class="fas fa-check"></i> Pruebas psicológicas</li>
+              <li><i class="fas fa-check"></i> Informe detallado</li>
+              <li><i class="fas fa-check"></i> Devolución final</li>
+              <li><i class="fas fa-check"></i> Certificado de asistencia</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="org-card reveal" style="--d:0.2s">
+          <div class="org-img">
+            <img src="img/servicio-ocupacional.jpg" alt="Salud ocupacional">
+          </div>
+          <div class="org-body">
+            <h3>Salud Ocupacional</h3>
+            <p>Evaluaciones y capacitaciones para el bienestar en el entorno laboral.</p>
+            <ul class="org-list">
+              <li><i class="fas fa-check"></i> Evaluaciones psicológicas</li>
+              <li><i class="fas fa-check"></i> Evaluación médica</li>
+              <li><i class="fas fa-check"></i> Capacitaciones preventivas</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="org-card reveal" style="--d:0.3s">
+          <div class="org-img">
+            <img src="img/servicio-psicoeducacion.jpg" alt="Psicoeducación">
+          </div>
+          <div class="org-body">
+            <h3>Psicoeducación</h3>
+            <p>Espacios de aprendizaje para padres, docentes y cuidadores.</p>
+            <ul class="org-list">
+              <li><i class="fas fa-check"></i> Escuela para padres</li>
+              <li><i class="fas fa-check"></i> Talleres psicoeducativos</li>
+              <li><i class="fas fa-check"></i> Orientación docente</li>
+              <li><i class="fas fa-check"></i> Grupos de apoyo</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CTA — Video de fondo, overlay suave, texto nuevo -->
+    <section class="cta-services">
+      <div class="cta-services-bg">
+        <video autoplay muted loop playsinline poster="img/cta-servicios-poster.jpg">
+          <source src="img/cta-servicios.mp4" type="video/mp4">
+        </video>
+        <div class="cta-services-overlay"></div>
+      </div>
+      <div class="cta-services-inner reveal">
+        <h2>Pedir ayuda es de valientes</h2>
+        <p>Escríbenos, el primer paso es siempre una conversación.</p>
+        <a href="https://wa.me/51966941229?text=Hola%2C%20quisiera%20agendar%20una%20cita%20inicial%20para%20una%20consulta%20psicol%C3%B3gica.%20%C2%BFCu%C3%A1l%20es%20la%20disponibilidad%20de%20horarios%3F%20Agradezco%20su%20tiempo." class="btn-wa-green btn-wa-large" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp"></i>
+          <span>Consultar por WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="img/logocentro.png" alt="Logo Asertiva Mente">
+            <div>
+              <span class="footer-brand-name">
+                <span class="brand-green">Asertiva</span><span class="brand-blue">Mente</span>
+              </span>
+              <span class="footer-brand-sub">Centro Psicológico</span>
+            </div>
+          </div>
+          <p>Transformando vidas con empatía y profesionalismo desde Trujillo.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/asertivamente_trujillo/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61576677617343" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@asertiva.mente" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/51966941229" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="ayuda.html">¿Necesitas ayuda?</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="servicios.html#terapia-pareja">Terapia de Pareja</a></li>
+            <li><a href="servicios.html#terapia-familiar">Terapia Familiar</a></li>
+            <li><a href="servicios.html#terapia-adultos">Terapia con Adultos</a></li>
+            <li><a href="servicios.html#terapia-infantil">Infantil y Adolescente</a></li>
+            <li><a href="servicios.html#organizacional">Organizacional</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Av. Prol. César Vallejo 1366, Trujillo</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:centropsicologicoasertivamente@gmail.com">centropsicologicoasertivamente@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+51966941229">966 941 229</a></li>
+            <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/51966941229" target="_blank">WhatsApp</a></li>
+          </ul>
+        </div>  
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Asertiva Mente. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>
+    (function() {
+      const carousel = document.getElementById('heroCarousel');
+      if (!carousel) return;
+
+      const slides = carousel.querySelectorAll('.carousel-slide-bg');
+      const dots = carousel.querySelectorAll('.carousel-dots .dot');
+      const prevBtn = carousel.querySelector('.carousel-prev');
+      const nextBtn = carousel.querySelector('.carousel-next');
+
+      let current = 0;
+      const total = slides.length;
+      let interval;
+      const delay = 7000;
+
+      function goTo(index) {
+        if (index < 0) index = total - 1;
+        if (index >= total) index = 0;
+
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+
+        current = index;
+
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function next() { goTo(current + 1); }
+      function prev() { goTo(current - 1); }
+
+      function startAuto() {
+        interval = setInterval(next, delay);
+      }
+
+      function stopAuto() {
+        clearInterval(interval);
+      }
+
+      prevBtn.addEventListener('click', () => { stopAuto(); prev(); startAuto(); });
+      nextBtn.addEventListener('click', () => { stopAuto(); next(); startAuto(); });
+
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); });
+      });
+
+      carousel.addEventListener('mouseenter', stopAuto);
+      carousel.addEventListener('mouseleave', startAuto);
+
+      // Touch support
+      let touchStartX = 0;
+      carousel.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; });
+      carousel.addEventListener('touchend', (e) => {
+        const diff = touchStartX - e.changedTouches[0].screenX;
+        if (Math.abs(diff) > 40) {
+          stopAuto();
+          diff > 0 ? next() : prev();
+          startAuto();
+        }
+      });
+
+      startAuto();
+    })();
+  </script>
+</body>
+</html>
